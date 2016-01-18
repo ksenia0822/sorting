@@ -34,17 +34,27 @@ function split(arr) {
     return [firstHalf, secondHalf];
 }
 
+// split
+// recurse mergeSort on arr[0] and arr[1]
+// arr[0] = mersesotr(arr0)
+//call merge on sorted arr[0] and arr[1]
+
 function mergeSort(arr) {
-  // splits an array using split() until there are only one elements in each
-  //use merge function recursively to sort the array
-  //return array
-  
+
+ var leftAndRight =  split(arr);
+ var left = leftAndRight[0];
+ var right = leftAndRight[1];
+ 
+ left = mergeSort(left);
+ right = mergeSort(right);
+ 
+ var finalArr = merge(left, right);
+ 
+   if(left.length === 1 || right.length === 1) {
+    return finalArr;
+  }
+
 }
-
-
-
-
-
 
 
 
