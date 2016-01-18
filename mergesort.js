@@ -25,3 +25,14 @@ function merge(arr1, arr2, result) {
  return merge(arr1, arr2, result);
  
 }
+
+function split(arr) {
+    var half = Math.floor(arr.length/2);
+    var firstHalf = arr.slice(0,half);
+    var secondHalf = arr.slice(half);
+
+    return [firstHalf, secondHalf];
+}
+
+
+
