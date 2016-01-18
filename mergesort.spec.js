@@ -6,6 +6,6 @@ describe('Merge', function(){
 
 describe('Split Array', function(){
     it('splits an array into half', function(){
-        expect( split([1,3,5,2,4]) ).toEqual( [[1,3],[5,2,4]] );
+        expect( split([1,3,5,2,4]) ).toEqual( [[1,3],[5,2,4]] ); // || [[1,3,5],[2,4]]
     });
 });
