@@ -34,5 +34,25 @@ function split(arr) {
     return [firstHalf, secondHalf];
 }
 
+function mergeSort(arr) {
+  // splits an array using split() until there are only one elements in each
+  //use merge function recursively to sort the array
+  //return array
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
