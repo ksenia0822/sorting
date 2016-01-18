@@ -1,6 +1,6 @@
 function merge(arr1, arr2, result) {
     if(!result) {
-        result = [];
+        var result = [];
     }
     
   if (arr1.length === 0 && arr2.length === 0) {
@@ -13,11 +13,5 @@ function merge(arr1, arr2, result) {
     result.push(arr1[0]);
     arr1 = arr1.slice(1);
   }
-  console.log(result);
-  merge(arr1, arr2, result);
- 
+  return merge(arr1, arr2, result);
 }
-
-// merge([1,3,5,7], [2,4,6,8])
-// result = []
-// result = [1]
