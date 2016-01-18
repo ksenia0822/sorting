@@ -40,20 +40,20 @@ function split(arr) {
 //call merge on sorted arr[0] and arr[1]
 
 function mergeSort(arr) {
+  if(arr.length < 2) {
+    return arr;
+  } 
 
- var leftAndRight =  split(arr);
- var left = leftAndRight[0];
- var right = leftAndRight[1];
+  var leftAndRight =  split(arr);
+  var left = leftAndRight[0];
+  var right = leftAndRight[1];
  
- left = mergeSort(left);
- right = mergeSort(right);
+  left = mergeSort(left);
+  right = mergeSort(right);
  
- var finalArr = merge(left, right);
+  var finalArr = merge(left, right);
  
-   if(left.length === 1 || right.length === 1) {
-    return finalArr;
-  }
-
+  return finalArr;
 }
 
 
@@ -66,3 +66,6 @@ function mergeSort(arr) {
 
 
 
+=======
+}
+>>>>>>> e85af1221d7912bd5c1080ed71a3d142d5dbd47a
